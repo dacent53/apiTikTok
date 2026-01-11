@@ -179,8 +179,6 @@ class Api():
         data = self.helper.request_get(self, url, session=session)
         return data.json()
 
-    ''' Halil İbrahim\'e Teşekkürler  search_hashtag, list_hashtag '''
-
     def search_hashtag(self, text):
         url = self.api_url + "aweme/v1/challenge/search/?cursor=0&keyword=" + text + "&count=10&type=1&hot_search=0&" + self.helper.query(
             self.helper.default_variable(self.global_variable))
